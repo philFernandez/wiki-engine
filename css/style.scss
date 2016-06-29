@@ -7,23 +7,28 @@ $wellMarLeft: -10%;
 $marTop: 16%;
 $marSides: 12%;
 $spacer: 2%;
-
-h1 {
-  font-family: 'Alegreya', serif;
-  font-size: 8em;
-  margin-top: -$marTop;
-  -webkit-text-stroke: 1px white;
-}
-
-
+$custFont: 'Special Elite', cursive;
 
 html body {
   margin-top: $marTop;
   margin-left: $marSides;
-  margin-right: $marSides;
- 
+  margin-right: $marSides; 
 }
 
+h1 {
+  //font-family: 'Alegreya', serif;
+  font-family: $custFont;
+  margin-top: -$marTop;
+  -webkit-text-stroke: 0.75px white;
+}
+
+a {
+  color: $queryColor;
+
+  &:link {
+    text-decoration: none;
+  }  
+}
 
 #inputRow {
   top: 40%;
@@ -32,7 +37,7 @@ html body {
 }
 
 #btnRow {  
-  font-family:  'Alegreya', serif;  
+  font-family:  $custFont;  
   padding-bottom: $spacer;
   -webkit-text-stroke: 3% white;
 }
@@ -51,23 +56,15 @@ html body {
 }
 
 .input-group {
-  font-family:  'Alegreya', serif;
+  font-family:  $custFont;
   background-color: $wellDarkest;
   border: 2px solid $wellColor;
   border-radius: 5px;
 }
 
-a {
-  color: $queryColor;
-
-  &:link {
-    text-decoration: none;
-  }  
-}
-
 .well {
   margin-left: $wellMarLeft;
-  font-family:  'Alegreya', serif;
+  font-family:  $custFont;
   font-size: 1.5em;
   background: $wellColor;
   box-shadow: 1px 3px 1px $wellDarker;
