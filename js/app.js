@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+	//$('body').children().css('border', '2px solid black');
+
 	$('#textBox').keypress(function(e){		
 		if(e.keyCode==13) {
 			$('#init').click();
@@ -7,6 +9,7 @@ $(document).ready(function(){
 	});
 	var titles = [];
 	$('#init').click(function(){
+			
 		var userSearch = document.getElementsByTagName('input')[0].value;
 		getApi(userSearch);
 	});
@@ -34,8 +37,16 @@ $(document).ready(function(){
 					urlOut += titles[i].replace(/\s/g, '%20');
 					
 					$('#link').append("<a href="+urlOut+" target='_blank'><div class='well'>"+titles[i]+"</div></a>");
-
 				}
+
+				$('body').animate({
+					'margin-top': '2%'
+				}, 500);	
+
+				$('.well').animate({
+					'height': '+=10px',
+					'width': '+=10%'
+				}, 500);
 			}
 
 		});
@@ -44,29 +55,12 @@ $(document).ready(function(){
 
 
 
-	// $('.link').each(function(){
-	// 	var url = 'https://en.wikipedia.org/wiki/';
-	// 	url += titles[i].replace(/\s/g, '%20');			
-	// 	$(this).wrap("<a href="+url+" target='_blank'><div class='well'>"+titles[i]+"</div></a>");
-	// 	i++;
-	// });
-
-		
-// $('.link').wrap("<a href='https://en.wikipedia.org/wiki/ The Things' target='_blank'><div class='well'>The Things</div></a>");
 
 
 	$('body').css('backgroundColor', 'rgb(' + rgbVal() + ',' + rgbVal() + ',' + rgbVal() + ')');
 	function rgbVal() {
 		return Math.floor(Math.random() * (255 - 1) + 1);
 	}
-
-
-
-//https://en.wikipedia.org/wiki/Babe Ruth (band)
-
-
-
-
 
 	
 

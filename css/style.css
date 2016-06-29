@@ -1,19 +1,25 @@
 html body {
-  margin-top: 13%;
-  margin-left: 2%;
-  margin-right: 2%; }
+  margin-top: 16%;
+  margin-left: 12%;
+  margin-right: 12%; }
 
 #inputRow {
-  position: relative;
   top: 40%;
-  padding-bottom: 3%; }
+  padding-bottom: 2%; }
 
-#buttonRow {
-  position: relative;
-  top: 50%;
-  left: 45.5%; }
+#button {
+  white-space: normal !important;
+  word-wrap: break-word;
+  padding-left: 47%;
+  font-family: 'Alegreya', serif;
+  padding-bottom: 2%; }
+
+.btn-responsive {
+  white-space: normal !important;
+  word-wrap: break-word; }
 
 .input-group {
+  font-family: 'Alegreya', serif;
   background-color: #e0e0e0;
   border: 2px double #e0e0e0;
   border-radius: 5px; }
@@ -24,15 +30,16 @@ a {
     text-decoration: none; }
 
 .well {
-  font-family: sans-serif;
-  font-size: 2em;
+  margin-left: -10%;
+  font-family: 'Alegreya', serif;
+  font-size: 1.5em;
   background: #5bc0de;
-  box-shadow: 0px 5px 0px #31b0d5; }
+  box-shadow: 1px 3px 1px #31b0d5; }
   .well:hover {
     background: #31b0d5;
-    box-shadow: 0px 5px 0px #2390b0; }
+    box-shadow: 1px 3px 1px #2390b0; }
   .well:active {
-    background: green;
-    box-shadow: 0px 0px 0px #2390b0; }
+    background: #31b0d5;
+    box-shadow: 1px 3px 1px #2390b0; }
 
 /*# sourceMappingURL=style.css.map */
