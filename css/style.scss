@@ -1,12 +1,19 @@
 
 $queryColor: black;
-$wellColor: #5bc0de;
+$wellColor:   #f7f7f7;
 $wellDarker: darken($wellColor, 10%);
 $wellDarkest: darken($wellDarker, 10%);
 $wellMarLeft: -10%;
 $marTop: 16%;
 $marSides: 12%;
 $spacer: 2%;
+
+h1 {
+  font-family: 'Alegreya', serif;
+  font-size: 8em;
+  margin-top: -$marTop;
+  -webkit-text-stroke: 1px white;
+}
 
 
 
@@ -21,25 +28,32 @@ html body {
 #inputRow {
   top: 40%;
   padding-bottom: $spacer;
+  -webkit-text-stroke: 3% white;
 }
 
-#button {
-  white-space: normal !important;
-  word-wrap: break-word;
-  padding-left: 47%;
-  font-family:  'Alegreya', serif;
+#btnRow {  
+  font-family:  'Alegreya', serif;  
   padding-bottom: $spacer;
+  -webkit-text-stroke: 3% white;
 }
 
-.btn-responsive {
-    white-space: normal !important;
-    word-wrap: break-word;
+.btn-block {
+    background: $wellColor;
+    box-shadow: 1px 3px 1px $wellDarker;
+    &:hover {
+      background: $wellDarker;
+      box-shadow: 1px 3px 1px $wellDarkest;
+    }
+    &:active {
+      background: $wellDarker;
+      box-shadow: 1px 3px 1px $wellDarkest;
+    }
 }
 
 .input-group {
   font-family:  'Alegreya', serif;
-  background-color: #e0e0e0;
-  border: 2px double #e0e0e0;
+  background-color: $wellDarkest;
+  border: 2px solid $wellColor;
   border-radius: 5px;
 }
 
@@ -65,6 +79,5 @@ a {
   &:active {
     background: $wellDarker;
     box-shadow: 1px 3px 1px $wellDarkest;
-
   }
 }
