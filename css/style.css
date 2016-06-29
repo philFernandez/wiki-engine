@@ -1,0 +1,38 @@
+html body {
+  margin-top: 13%;
+  margin-left: 2%;
+  margin-right: 2%; }
+
+#inputRow {
+  position: relative;
+  top: 40%;
+  padding-bottom: 3%; }
+
+#buttonRow {
+  position: relative;
+  top: 50%;
+  left: 45.5%; }
+
+.input-group {
+  background-color: #e0e0e0;
+  border: 2px double #e0e0e0;
+  border-radius: 5px; }
+
+a {
+  color: black; }
+  a:link {
+    text-decoration: none; }
+
+.well {
+  font-family: sans-serif;
+  font-size: 2em;
+  background: #5bc0de;
+  box-shadow: 0px 5px 0px #31b0d5; }
+  .well:hover {
+    background: #31b0d5;
+    box-shadow: 0px 5px 0px #2390b0; }
+  .well:active {
+    background: green;
+    box-shadow: 0px 0px 0px #2390b0; }
+
+/*# sourceMappingURL=style.css.map */
