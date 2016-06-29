@@ -1,13 +1,17 @@
-h1 {
-  font-family: 'Alegreya', serif;
-  font-size: 8em;
-  margin-top: -16%;
-  -webkit-text-stroke: 1px white; }
-
 html body {
   margin-top: 16%;
   margin-left: 12%;
   margin-right: 12%; }
+
+h1 {
+  font-family: "Special Elite", cursive;
+  margin-top: -16%;
+  -webkit-text-stroke: 0.75px white; }
+
+a {
+  color: black; }
+  a:link {
+    text-decoration: none; }
 
 #inputRow {
   top: 40%;
@@ -15,7 +19,7 @@ html body {
   -webkit-text-stroke: 3% white; }
 
 #btnRow {
-  font-family: 'Alegreya', serif;
+  font-family: "Special Elite", cursive;
   padding-bottom: 2%;
   -webkit-text-stroke: 3% white; }
 
@@ -30,19 +34,14 @@ html body {
     box-shadow: 1px 3px 1px #c4c4c4; }
 
 .input-group {
-  font-family: 'Alegreya', serif;
+  font-family: "Special Elite", cursive;
   background-color: #c4c4c4;
   border: 2px solid #f7f7f7;
   border-radius: 5px; }
 
-a {
-  color: black; }
-  a:link {
-    text-decoration: none; }
-
 .well {
   margin-left: -10%;
-  font-family: 'Alegreya', serif;
+  font-family: "Special Elite", cursive;
   font-size: 1.5em;
   background: #f7f7f7;
   box-shadow: 1px 3px 1px #dedede; }
