@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-	//$('body').children().css('border', '2px solid black');
+	//$('*').css('border', '2px solid black');
 
 	$('#textBox').keypress(function(e){		
 		if(e.keyCode==13) {
@@ -36,7 +36,7 @@ $(document).ready(function(){
 					titles[i] = response.query.search[i].title;
 					urlOut += titles[i].replace(/\s/g, '%20');
 					
-					$('#link').append("<a href="+urlOut+" target='_blank'><div class='well'>"+titles[i]+"</div></a>");
+					$('#link').append("<a href="+urlOut+" target='_blank'><div class='well'>-"+titles[i]+"-</div></a>");
 				}
 
 				$('body').animate({
